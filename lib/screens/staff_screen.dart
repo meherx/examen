@@ -74,7 +74,7 @@ class Staff extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
-                    color: Colors.black,
+                    color: Color.fromARGB(255, 145, 194, 22),
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -85,11 +85,11 @@ class Staff extends StatelessWidget {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                    staffDetail("Amit", 200, 4.5, 'staff.jpg'),
-                    staffDetail("Amit", 200, 4.5, 'staff.jpg'),
-                    staffDetail("Amit", 200, 4.5, 'staff.jpg'),
-                    staffDetail("Amit", 200, 4.5, 'staff.jpg'),
-                    staffDetail("Amit", 200, 4.5, 'staff.jpg'),
+                    staffDetail("Tbib 1", 250, 3, 'staff.jpg'),
+                    staffDetail("Tbib 2", 300, 4.5, 'staff.jpg'),
+                    staffDetail("Tbib 3", 150, 3.5, 'staff.jpg'),
+                    staffDetail("Tbib 4", 250, 3, 'staff.jpg'),
+                    staffDetail("Tbib 5", 400, 5, 'staff.jpg'),
                   ],
                 ),
               ),
@@ -100,7 +100,7 @@ class Staff extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
-                    color: Colors.black,
+                    color: Color.fromARGB(255, 145, 194, 22),
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -111,11 +111,11 @@ class Staff extends StatelessWidget {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                    staffDetail("Smriti", 200, 4.5, 'staff-2.jpg'),
-                    staffDetail("Smriti", 200, 4.5, 'staff-2.jpg'),
-                    staffDetail("Smriti", 200, 4.5, 'staff-2.jpg'),
-                    staffDetail("Smriti", 200, 4.5, 'staff-2.jpg'),
-                    staffDetail("Smriti", 200, 4.5, 'staff-2.jpg'),
+                    staffDetail("Tbib 1", 300, 4, 'staff-2.jpg'),
+                    staffDetail("Tbib 2", 200, 3, 'staff-2.jpg'),
+                    staffDetail("Tbib 3", 400, 5, 'staff-2.jpg'),
+                    staffDetail("Tbib 4", 250, 3.5, 'staff-2.jpg'),
+                    staffDetail("Tbib 5", 300, 4.5, 'staff-2.jpg'),
                   ],
                 ),
               ),
@@ -126,28 +126,27 @@ class Staff extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
-                    color: Colors.black,
+                    color: Color.fromARGB(255, 145, 194, 22),
                   ),
                   textAlign: TextAlign.center,
                 ),
               ),
               GridView(
-                shrinkWrap: true,
-                physics: const BouncingScrollPhysics(),
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    crossAxisSpacing: 3,
-                    mainAxisSpacing: 5,
-                    mainAxisExtent: 245),
-                children: [
-                  staffDetailGrid("Smriti", 200, 4.5, 'staff.jpg'),
-                  staffDetailGrid("Smriti", 200, 4.5, 'staff-2.jpg'),
-                  staffDetailGrid("Smriti", 200, 4.5, 'staff-2.jpg'),
-                  staffDetailGrid("Smriti", 200, 4.5, 'staff.jpg'),
-                  staffDetailGrid("Smriti", 200, 4.5, 'staff.jpg'),
-                  staffDetailGrid("Smriti", 200, 4.5, 'staff-2.jpg'),
-                ],
-              ),
+                  shrinkWrap: true,
+                  physics: const BouncingScrollPhysics(),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      crossAxisSpacing: 3,
+                      mainAxisSpacing: 5,
+                      mainAxisExtent: 245),
+                  children: [
+                    staffDetailGrid("Tbib 1", 300, 4.5, 'staff.jpg'),
+                    staffDetailGrid("Tbib 2", 200, 3, 'staff-2.jpg'),
+                    staffDetailGrid("Tbib 3", 400, 4.5, 'staff-2.jpg'),
+                    staffDetailGrid("Tbib 4", 250, 3.5, 'staff.jpg'),
+                    staffDetailGrid("Tbib 5", 300, 4, 'staff.jpg'),
+                    staffDetailGrid("Tbib 6", 500, 5, 'staff-2.jpg'),
+                  ]),
               const SizedBox(
                 height: 50,
               )
@@ -231,7 +230,7 @@ class Staff extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      careTile("Covid Care"),
+                      careTile("ICU Care"),
                       const SizedBox(
                         width: 5,
                       ),
@@ -286,7 +285,7 @@ class Staff extends StatelessWidget {
                           vertical: 5, horizontal: 12),
                       color: kPrimaryColor,
                       child: Text(
-                        '₹ $charge',
+                        'TND $charge',
                         style: const TextStyle(
                             color: Colors.white, fontWeight: FontWeight.bold),
                       ),
@@ -369,7 +368,7 @@ class Staff extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      careTileGrid("Covid Care"),
+                      careTileGrid("ICU Care"),
                       const SizedBox(
                         width: 5,
                       ),
@@ -423,7 +422,7 @@ class Staff extends StatelessWidget {
                           vertical: 5, horizontal: 12),
                       color: kPrimaryColor,
                       child: Text(
-                        '₹ $charge',
+                        'TND $charge',
                         style: const TextStyle(
                             color: Colors.white, fontWeight: FontWeight.bold),
                       ),

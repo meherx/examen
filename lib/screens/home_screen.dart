@@ -20,17 +20,17 @@ class Home extends StatelessWidget {
                 width: MediaQuery.of(context).size.width,
                 decoration: const BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('assets/header.png'),
+                        image: AssetImage('assets/header1.png'),
                         fit: BoxFit.fill)),
               ),
               const Padding(
                 padding: EdgeInsets.only(top: 30, bottom: 20),
                 child: Text(
-                  "Healtcare Service",
+                  "Healthcare Services",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
-                    color: Colors.black,
+                    color: Color.fromARGB(255, 145, 194, 22),
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -52,7 +52,7 @@ class Home extends StatelessWidget {
                   buildService("ICU at Home", 'doctor.jpg'),
                   buildService("Diagnosis", 'doctor.jpg'),
                   buildService("Vaccination", 'doctor.jpg'),
-                  buildService("Cancer Care", 'doctor.jpg'),
+                  buildService("Nutritional Care", 'doctor.jpg'),
                 ],
               ),
               Padding(
@@ -87,7 +87,7 @@ class Home extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
-                    color: Colors.black,
+                    color: Color.fromARGB(255, 145, 194, 22),
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -98,21 +98,12 @@ class Home extends StatelessWidget {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                    buildStaff(
-                        "Pryansha",
-                        "Offer Older Care, Covid Care and General Care",
+                    buildStaff("Tbib 1", "Offer Older Care and General Care",
                         'staff.jpg'),
-                    buildStaff(
-                        "Amit Sharma",
-                        "Offer Older Care, Covid Care and General Care",
+                    buildStaff("Tbib 2 ", "Offer Covid Care and Vaccination",
                         'staff.jpg'),
-                    buildStaff(
-                        "Hardik Gupta",
-                        "Offer Older Care, Covid Care and General Care",
-                        'staff.jpg'),
-                    buildStaff(
-                        "Smriti",
-                        "Offer Older Care, Covid Care and General Care",
+                    buildStaff("Tbib 3", "Offer Nursing Care", 'staff.jpg'),
+                    buildStaff("Tbib 4", "Offer Diagnosis and ICU Treatment",
                         "staff.jpg"),
                   ],
                 ),
@@ -122,10 +113,9 @@ class Home extends StatelessWidget {
                 child: Text(
                   "Trending Articles",
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
-                    color: Colors.black,
-                  ),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                      color: Color.fromARGB(255, 145, 194, 22)),
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -136,34 +126,24 @@ class Home extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   children: [
                     buildArticle(
-                        "How to stay fit during work from home?",
-                        "Lorem Ipsum is "
-                            "simply dummy text of the printing and typesetting industry."
-                            " Lorem Ipsum has been the industry's standard",
+                        "What is healthcare?",
+                        "Healthcare refers to maintaining/improving physical or mental health.",
+                        "article.jpg"),
+                    buildArticle(
+                        " What is a healthcare provider?",
+                        "Healthcare provider is a licensed/certified professional delivering healthcare services.",
+                        "article.jpg"),
+                    buildArticle(
+                        "Why should you take care of your health ? ",
+                        "You should take care of your health to prevent illnesses, improve well-being, and live a longer, happier life.",
+                        "article.jpg"),
+                    buildArticle(
+                        "What's ICU treatment ?",
+                        "ICU treatment is intensive care provided to critically ill patients who require close monitoring and advanced life support measures.",
                         "article.jpg"),
                     buildArticle(
                         "How to stay fit during work from home?",
-                        "Lorem Ipsum is "
-                            "simply dummy text of the printing and typesetting industry."
-                            " Lorem Ipsum has been the industry's standard",
-                        "article.jpg"),
-                    buildArticle(
-                        "How to stay fit during work from home?",
-                        "Lorem Ipsum is "
-                            "simply dummy text of the printing and typesetting industry."
-                            " Lorem Ipsum has been the industry's standard",
-                        "article.jpg"),
-                    buildArticle(
-                        "How to stay fit during work from home?",
-                        "Lorem Ipsum is "
-                            "simply dummy text of the printing and typesetting industry."
-                            " Lorem Ipsum has been the industry's standard",
-                        "article.jpg"),
-                    buildArticle(
-                        "How to stay fit during work from home?",
-                        "Lorem Ipsum is "
-                            "simply dummy text of the printing and typesetting industry."
-                            " Lorem Ipsum has been the industry's standard",
+                        "To stay fit during work, you can establish an exercise routine,have a  diet, and prioritize good sleep habits.",
                         "article.jpg"),
                   ],
                 ),
